@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu Sorteio | Legal documents</title>
+<meta name="description" content="Terms of Use and Privacy Policy of the Meu Sorteio app.">
+<style>
+  :root {
+    --paper: #F4F3FA;
+    --ink: #1A1530;
+    --brand: #4B2BD6;
+    --muted: #5B5674;
+    --line: #E4E1F0;
+    --card: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141026;
+      --ink: #F2F0FA;
+      --brand: #B7A8FF;
+      --muted: #A9A3C4;
+      --line: #2E2850;
+      --card: #1F1A38;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagina { max-width: 30rem; width: 100%; padding: 2.5rem 1.25rem; text-align: center; }
+  .app-nome {
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  h1 { font-size: 1.6rem; color: var(--brand); margin: 0.35rem 0 0.5rem; }
+  .subtitulo { color: var(--muted); font-size: 0.95rem; margin-bottom: 2rem; }
+  .cartao {
+    display: block; background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 1.1rem 1.25rem; margin-bottom: 0.85rem;
+    text-decoration: none; color: var(--ink); text-align: left;
+    transition: border-color 0.15s ease;
+  }
+  .cartao:hover { border-color: var(--brand); }
+  .cartao strong { display: block; color: var(--brand); font-size: 1.05rem; margin-bottom: 0.15rem; }
+  .cartao span { font-size: 0.85rem; color: var(--muted); }
+  footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); }
+  .idiomas { display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem; }
+  .idiomas a {
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
+    text-decoration: none; color: var(--muted); padding: 0.2rem 0.6rem;
+    border: 1px solid var(--line); border-radius: 999px;
+  }
+  .idiomas a.ativo { background: var(--brand); border-color: var(--brand); color: var(--paper); }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <nav class="idiomas" aria-label="Language">
+    <a href="index.html">PT</a>
+    <a class="ativo" href="index-en.html">EN</a>
+    <a href="index-es.html">ES</a>
+  </nav>
+  <div class="app-nome">Meu Sorteio</div>
+  <h1>Legal documents</h1>
+  <p class="subtitulo">Draw names, numbers, teams, secret santa, bingo and more. 100% offline, your data stays on your device.</p>
+
+  <a class="cartao" href="politica-de-privacidade-en.html">
+    <strong>Privacy Policy</strong>
+    <span>How the app handles your data and your rights.</span>
+  </a>
+
+  <a class="cartao" href="termos-de-uso-en.html">
+    <strong>Terms of Use</strong>
+    <span>Rules of use, prize draws and warranty limitations.</span>
+  </a>
+
+  <footer>Developed by HVCB App&amp;Games · <a href="mailto:hvcbappegames@gmail.com" style="color:var(--muted)">hvcbappegames@gmail.com</a></footer>
+</div>
+</body>
+</html>
